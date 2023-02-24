@@ -1,0 +1,179 @@
+:root{
+    --softRed: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --darkBrown: hsl(25, 47%, 15%);
+    --mediumBrown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --paleOrange: hsl(33, 100%, 98%);
+}
+
+*,html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+.container{
+    width: 450px;
+    margin: 200px auto;
+}
+
+/* Styling Upper Section */
+
+.upper-section{
+    height: 90px;
+    margin: 5px;
+    background: var(--softRed);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.upper-title{
+    color: var(--paleOrange);
+    padding: 10px 0px 10px 25px;
+}
+
+.upper-title .title{
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #f4ddc2;
+}
+
+.upper-title .upper-balance{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.card-icon{
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.hollow-circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 2px solid var(--paleOrange);
+    margin-right: -22px;
+    z-index: 1;
+}
+
+.filled-circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 2px solid var(--darkBrown);
+    background: var(--darkBrown);
+}
+
+/* Styling Lower Section */
+
+.lower-section{
+    height: 380px;
+    margin: 5px;
+    padding: 10px 25px 10px 25px;
+    background: var(--paleOrange);
+    border-radius: 20px;
+}
+
+.chart{
+    display: flex;
+    gap: 10px;
+    height: 180px;
+    align-items: flex-end;
+}
+
+.lower-title{
+    color: var(--darkBrown);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.chart-item{
+    flex: 1;
+    text-align: center;
+    background-color: var(--softRed);
+    border-radius: 5px;
+}
+
+.monday{
+    height: 40px;
+}
+
+.tuesday{
+    height: 75px;
+}
+
+.wednesday{
+    height: 130px;
+    background: var(--cyan);
+}
+
+.thursday{
+    height: 70px;
+}
+
+.friday{
+    height: 60px;
+}
+
+.saturday{
+    height: 100px;
+}
+
+.sunday{
+    height: 65px;
+}
+
+.chart-label{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+.label{
+    flex: 1;
+    font-size: smaller;
+    color: var(--mediumBrown);
+}
+
+hr{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid var(--mediumBrown);
+}
+
+.total{
+    color: var(--mediumBrown);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.total-amount{
+    font-size: 2.5rem;
+    color: var(--darkBrown);
+    font-weight: bolder;
+}
+
+.last-month-percentage{
+    color: var(--darkBrown);
+    font-weight: bolder;
+}
+
+.last-month{
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
